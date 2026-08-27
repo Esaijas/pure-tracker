@@ -1,0 +1,51 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pure Tracker</title>
+<style>
+  :root { --ink:#1a1a1a; --dim:#5c5c5c; --bg:#fbfaf8; --rule:#e2ded7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e6e2; --dim:#a09c95; --bg:#141414; --rule:#2e2c29; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:36rem; margin:0 auto; padding:4rem 1.5rem 5rem; }
+  h1 { font-size:2rem; margin:0 0 .3rem; letter-spacing:-.02em; }
+  .sub { color:var(--dim); margin:0 0 2.5rem; font-size:1.05rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; }
+  p, li { margin:0 0 .9rem; }
+  ul { padding-left:1.1rem; }
+  footer { margin-top:3.5rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+           color:var(--dim); font-size:.9rem; }
+  a { color:inherit; }
+</style>
+<main>
+  <h1>Pure Tracker</h1>
+  <p class="sub">A sports tracker that keeps your history on your own phone.</p>
+
+  <p>Pure Tracker records walks, runs, rides, swims, skiing and a few dozen
+  other things, on Android. It has no account, no server and no analytics. What
+  it measures stays on the phone unless you ask it to go somewhere.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Records a route, a pace, a climb and a heart rate, with the screen off.</li>
+    <li>Draws the history back — by activity, by week, by month, by year.</li>
+    <li>Exports any activity as a GPX file you can open anywhere.</li>
+    <li>Optionally copies your activities to a folder in your own Google Drive,
+      so that losing the phone does not lose the history.</li>
+  </ul>
+
+  <h2>The Drive backup is optional</h2>
+  <p>If you turn it on, the app asks Google for one narrow permission —
+  <code>drive.file</code> — which lets it see only the files it wrote itself
+  and nothing else in your Drive. What that means in practice, and who can read
+  a backup once it exists, is set out on the
+  <a href="privacy.html">privacy page</a>.</p>
+
+  <footer>
+    <p>A personal project, not a company.
+    <a href="privacy.html">Privacy</a></p>
+  </footer>
+</main>

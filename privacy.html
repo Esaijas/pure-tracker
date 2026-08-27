@@ -1,0 +1,82 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pure Tracker — Privacy</title>
+<style>
+  :root { --ink:#1a1a1a; --dim:#5c5c5c; --bg:#fbfaf8; --rule:#e2ded7; --warn:#8a3a1e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e8e6e2; --dim:#a09c95; --bg:#141414; --rule:#2e2c29; --warn:#e0916f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:36rem; margin:0 auto; padding:3rem 1.5rem 5rem; }
+  h1 { font-size:1.6rem; line-height:1.25; margin:0 0 .25rem; letter-spacing:-.01em; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; letter-spacing:-.005em; }
+  .sub { color:var(--dim); margin:0 0 2.5rem; }
+  p, li { margin:0 0 .9rem; }
+  ul { padding-left:1.1rem; }
+  strong { font-weight:600; }
+  .note { border-left:3px solid var(--warn); padding:.1rem 0 .1rem 1rem; margin:1.5rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  footer { margin-top:3.5rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+           color:var(--dim); font-size:.9rem; }
+  a { color:inherit; }
+</style>
+<main>
+  <h1>Pure Tracker — Privacy</h1>
+  <p class="sub">What the app does with your Google account, in plain terms.</p>
+
+  <p>Pure Tracker is a sports tracker that records activities on your own phone.
+  It has no accounts, no servers and no analytics. The only thing it ever sends
+  anywhere is what this page describes.</p>
+
+  <h2>What it asks Google for</h2>
+  <p>One permission, <code>drive.file</code>. It lets an app see and manage
+  <strong>only the files it created itself</strong>. Pure Tracker is
+  structurally unable to read the rest of your Google Drive — not as a matter
+  of good behaviour, but because it was never granted the ability.</p>
+
+  <h2>What it writes there</h2>
+  <p>Your activity files, in a folder in your own Google Drive: the route, the
+  times, the heights, heart rate where a sensor recorded one, and any
+  photographs attached to an activity. Nothing else. It is a copy of what is
+  already on your phone, so that losing the phone does not lose the history.</p>
+
+  <h2>Where else it goes</h2>
+  <p><strong>Nowhere.</strong> Nothing is sent to the developer, to any
+  analytics service, or to any third party. There is no account to create and
+  no profile to build.</p>
+
+  <div class="note">
+    <h2 style="margin-top:0">The files are not encrypted</h2>
+    <p><strong>Anyone who can get into that Google account can read them,
+    including where you live.</strong> An activity file records where it
+    started, and for most people that is their front door.</p>
+    <p>That is a deliberate choice rather than an oversight. Encrypting would
+    stop the folder being openable by hand, which is the point of having it,
+    and would add a lost-passphrase failure worse than losing the phone.</p>
+    <p>The list of who can read a backup is longer than it first looks: you,
+    anyone who gets into your account, Google, anyone Google is legally
+    compelled to answer, <strong>any other app that was ever granted
+    full-Drive access</strong>, and every computer running Drive for desktop
+    signed into that account.</p>
+  </div>
+
+  <h2>Turning it off</h2>
+  <p>Sign out inside the app, which revokes its access at Google rather than
+  only forgetting it on the phone. You can also revoke it yourself at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>The files already written stay in your Drive. Delete them there whenever
+  you like; the app will not put them back unless you ask it to back up again.</p>
+
+  <h2>What stays on the phone</h2>
+  <p>Everything, whether or not you ever sign in. The backup is optional and
+  the app records, draws and exports without it.</p>
+
+  <footer>
+    <p>Pure Tracker is a personal project and not a company.
+    Questions: <a href="mailto:REPLACE-WITH-YOUR-CONTACT-ADDRESS">contact</a>.</p>
+    <p>Last updated 26 August 2026.</p>
+  </footer>
+</main>
